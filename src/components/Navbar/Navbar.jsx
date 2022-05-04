@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { images } from '../../constants'
-import { HiMenuAlt4, HiX } from 'react-icons/hi'
+import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 import './Styles.scss'
 
@@ -9,9 +8,9 @@ export const Navbar = () => {
 
   return (
     <nav className='app__navbar'>
-      <div className='app__navbar-logo'>
+      {/* <div className='app__navbar-logo'>
         <img src={images.logo} alt='Logo' />
-      </div>
+      </div> */}
       <ul className='app__navbar-links'>
         {['Home', 'About', 'Work', 'Skills', 'Testimonials', 'Contact'].map(
           (item, index) => (
@@ -24,7 +23,7 @@ export const Navbar = () => {
       </ul>
 
       <div className='app__navbar-menu'>
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenuAlt3 onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
