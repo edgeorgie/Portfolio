@@ -35,10 +35,15 @@ export const Header = () => {
           transition={{ duration: 0.5, delayChidlren: 0.5 }}
           className='app__header-img'
         >
-          <img className='app__header-img--profile' src={images.profile} alt='Profile picture' />
           <motion.img
+            className='app__header-img--profile'
+            src={images.profile} alt='Profile picture'
             whileInView={{ scale: [0, 1] }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
+          />
+          <motion.img
+            whileInView={{ scale: [0, 1] }}
+            transition={{ duration: 0.7, ease: 'easeInOut' }}
             src={images.circle}
             alt='Profile circle'
             className='overlay-circle'
