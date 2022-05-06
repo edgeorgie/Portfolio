@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { urlFor, client } from '../../client'
+import { AppWrap } from '../../wrapper'
 import './Styles.scss'
 
-export const About = () => {
+const NormalAbout = () => {
   const [abouts, setAbouts] = useState([])
 
   useEffect(() => {
@@ -39,3 +40,5 @@ export const About = () => {
     </div>
   )
 }
+
+export const About = AppWrap(NormalAbout, 'about')
