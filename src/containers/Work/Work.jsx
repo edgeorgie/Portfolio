@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { motion } from 'framer-motion'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import './Styles.scss'
 
@@ -118,7 +118,7 @@ export const NormalWork = () => {
               </p>
 
               <div className='app__work-tag app__flex'>
-                <p className='p-text'>{work.tags[0]}</p>
+                <p className='p-text'>{work?.tags?.[0]}</p>
               </div>
             </div>
           </div>
@@ -128,4 +128,8 @@ export const NormalWork = () => {
   )
 }
 
-export const Work = AppWrap(NormalWork, 'work')
+export const Work = AppWrap(
+  MotionWrap(NormalWork, 'app__works'),
+  'work',
+  'app__primarybg'
+)
