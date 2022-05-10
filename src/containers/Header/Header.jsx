@@ -17,16 +17,22 @@ export const NormalHeader = () => {
             <div className='badge-cmp app__flex'>
               <span>👋🏽</span>
               <div style={{ marginLeft: 20 }}>
-                <p className='p-text'>Hello there, I am</p>
+                <p className='p-text'>Hello there, my name is</p>
                 <h1 className='head-text'>Edwin</h1>
+                <p className='p-text'>And I'm from Colombia</p>
               </div>
             </div>
 
             <div className='tag-cmp app__flex'>
-              <p className='p-text'>Front-end Developer</p>
-              <p className='p-text'>Web Developer</p>
-              <p className='p-text'>UI/UX Designer</p>
-              <p className='p-text'>Freelancer</p>
+              <p className='p-text'>
+                <strong>Frontend Developer</strong>
+              </p>
+              <p className='p-text'>
+                <strong>UI/UX Designer</strong>
+              </p>
+              <p className='p-text'>
+                <strong>Freelancer</strong>
+              </p>
             </div>
           </div>
         </motion.div>
@@ -38,7 +44,8 @@ export const NormalHeader = () => {
         >
           <motion.img
             className='app__header-img--profile'
-            src={images.profile} alt='Profile picture'
+            src={images.profile}
+            alt='Profile picture'
             whileInView={{ scale: [0, 1] }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           />
@@ -55,4 +62,4 @@ export const NormalHeader = () => {
   )
 }
 
-export const Header = AppWrap(NormalHeader, 'home')
+export const Header = AppWrap(NormalHeader, 'Home')

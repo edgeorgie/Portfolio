@@ -28,9 +28,9 @@ const NormalFooter = () => {
 
     const contact = {
       _type: 'contact',
-      name: name,
-      email: email,
-      message: message
+      name,
+      email,
+      message
     }
 
     client.create(contact).then(() => {
@@ -44,29 +44,45 @@ const NormalFooter = () => {
   return (
     <footer>
       <div className='app__footer-cards'>
-        <h2 className='head-text'>
-          Want to build great products? Let's get in touch
+        <h2 className='head-text'>Want to build great products?</h2>
+        <h2 style={{ marginTop: 5, textDecoration: 'underline' }}>
+          Let's get in touch
         </h2>
         <div className='app__footer-card'>
           <SiGmail style={{ color: '#DB4437' }} size={42} />
-          <a href='mailto:ed.jorge1122@gmail.com' className='p-text'>
+          <a
+            href='mailto:ed.jorge1122@gmail.com'
+            target='_blank'
+            rel='noreferrer'
+            className='p-text'
+          >
             ed.jorge1122@gmail.com
           </a>
         </div>
 
-        <div className='app__footer-card' style={{ backgroundColor: '#d2f9e0' }}>
+        <div
+          className='app__footer-card'
+          style={{ backgroundColor: '#d2f9e0' }}
+        >
           <BsWhatsapp style={{ color: '#25D366' }} size={42} />
           <a
             href='https://wa.me/+573002813676/?text=Hello%20there!%20I%20am%20[YOUR%20NAME]%20and%20I%20want%20to%20work%20with%20you!'
+            target='_blank'
+            rel='noreferrer'
             className='p-text'
           >
             +57 (300) 281 3676
           </a>
         </div>
-        <div className='app__footer-card' style={{ backgroundColor: '#d1ecf8' }}>
+        <div
+          className='app__footer-card'
+          style={{ backgroundColor: '#d1ecf8' }}
+        >
           <FaTelegramPlane style={{ color: '#229ED9' }} size={42} />
           <a
-            href='https://wa.me/+573002813676/?text=Hello%20there!%20I%20am%20[YOUR%20NAME]%20and%20I%20want%20to%20work%20with%20you!'
+            href='https://t.me/EdwinJorge'
+            target='_blank'
+            rel='noreferrer'
             className='p-text'
           >
             +57 (300) 281 3676 | @EdwinJorge
@@ -119,7 +135,10 @@ const NormalFooter = () => {
           : (
             <div style={{ textAlign: 'center', marginTop: 0 }}>
               <h2>Thank you, I'll be in touch soon</h2>
-              <BsCheck2Circle style={{ marginTop: 15, color: '#313bac' }} size={42} />
+              <BsCheck2Circle
+                style={{ marginTop: 15, color: '#313bac' }}
+                size={42}
+              />
             </div>
             )}
       </div>
@@ -129,6 +148,6 @@ const NormalFooter = () => {
 
 export const Footer = AppWrap(
   MotionWrap(NormalFooter),
-  'footer',
+  'Contact',
   'app__whitebg'
 )

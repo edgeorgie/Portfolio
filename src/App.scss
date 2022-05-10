@@ -1,5 +1,11 @@
 @import './main.scss';
 
+html {
+  @media screen and (min-width: 850px) {
+    font-size: 125%;
+  }
+}
+
 .app {
   background-color: $primary-color;
   font-family: $font-base;
@@ -31,25 +37,14 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 4rem 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
 
   @media screen and (max-width: 450px) {
     padding: 4rem 1rem 2rem;
-  }
-}
-
-.copyright {
-  width: 100%;
-  padding: 2rem 0 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-
-  p {
-    text-transform: uppercase;
-    color: $black-color;
   }
 }
 
@@ -79,7 +74,7 @@
   color: $gray-color;
   line-height: 1.5;
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (min-width: 1800px) {
     font-size: 1.75rem;
   }
 }
@@ -101,13 +96,13 @@
 
 .app__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
   padding: 1rem;
 
-  div {
+  a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -155,7 +150,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  position: relative;
   padding: 1rem;
 
   .app__navigation-dot {

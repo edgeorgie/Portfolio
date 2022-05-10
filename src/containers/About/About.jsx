@@ -43,6 +43,6 @@ const NormalAbout = () => {
 
 export const About = AppWrap(
   MotionWrap(NormalAbout, 'app__about'),
-  'about',
+  'About',
   'app__whitebg'
 )

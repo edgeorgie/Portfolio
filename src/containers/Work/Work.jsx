@@ -43,7 +43,6 @@ export const NormalWork = () => {
       <div className='app__work-filter'>
         {[
           'All',
-          'Web',
           'Frontend',
           'React.js',
           'Next.js',
@@ -130,6 +129,6 @@ export const NormalWork = () => {
 
 export const Work = AppWrap(
   MotionWrap(NormalWork, 'app__works'),
-  'work',
+  'Work',
   'app__primarybg'
 )
