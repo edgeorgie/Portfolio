@@ -3,6 +3,7 @@
 .app__skills {
   width: 100%;
   flex-direction: column;
+  padding: 2rem 0;
 }
 
 .app__skills-container {
@@ -97,7 +98,28 @@
   align-items: flex-start;
   margin-top: 1rem 0;
   width: 100%;
+  
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    .app__skills-exp-year {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h4, span, p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }
 
 .app__skills-exp-year {

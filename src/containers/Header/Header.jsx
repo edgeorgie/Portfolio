@@ -7,7 +7,7 @@ import './Styles.scss'
 export const NormalHeader = () => {
   return (
     <>
-      <div className='app__header app_flex'>
+      <header className='app__header app_flex'>
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5 }}
@@ -57,7 +57,7 @@ export const NormalHeader = () => {
             className='overlay-circle'
           />
         </motion.div>
-      </div>
+      </header>
     </>
   )
 }

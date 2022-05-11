@@ -128,7 +128,7 @@ const NormalFooter = () => {
               <input
                 className='app__footer-form-button'
                 type='submit'
-                value={loading ? 'Sending...' : 'Sent message'}
+                value={loading ? 'Sending...' : 'Send message'}
               />
             </form>
             )

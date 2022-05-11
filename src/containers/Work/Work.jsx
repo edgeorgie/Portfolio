@@ -39,7 +39,6 @@ export const NormalWork = () => {
       <h2 className='head-text'>
         To <span>give you effective results 🚀</span>
       </h2>
-      <span>Check my work 👇🏽👀</span>
       <div className='app__work-filter'>
         {[
           'All',
