@@ -145,8 +145,8 @@
   .app__header-img--profile {
     background-color: $secondary-color;
     object-fit: cover;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 50px;
@@ -157,8 +157,8 @@
     }
 
     @media screen and (min-width: 1240px) {
-      width: 600px;
-      height: 600px;
+      width: 550px;
+      height: 550px;
     }
 
     @media screen and (min-width: 1440px) {

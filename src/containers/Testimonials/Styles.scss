@@ -5,7 +5,7 @@
   width: 100%;
   flex-direction: column;
   display: flex;
-  padding: 2rem;
+  padding: 2rem 0;
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
@@ -36,8 +36,8 @@
 }
 
 .app__testimonial-item {
-  width: 60%;
-  max-height: 400px;
+  width: 70%;
+  height: auto;
   background-color: $white-color;
   display: flex;
   padding: 2rem;
@@ -46,19 +46,11 @@
   transition: all 0.3s ease-in-out;
 
   img {
-    width: 50%;
+    width: auto;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-  }
-
-  @media screen and (min-width: 2000px) {
-    min-height: 450px;
-
-    img {
-      width: 150px;
-      height: 150px;
-    }
+    margin-right: 1rem;
   }
 
   @media screen and (max-width: 850px) {
@@ -67,6 +59,12 @@
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+
+    img {
+      height: 60%;
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
   }
 }
 
@@ -81,8 +79,8 @@
   align-items: flex-start;
 
   p {
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     color: $black-color;
     font-family: $font-base;
   }
@@ -132,7 +130,6 @@
 .app__testimonial-brands {
   width: 80%;
   flex-wrap: wrap;
-  margin-top: 2rem;
 
   div {
     width: 150px;

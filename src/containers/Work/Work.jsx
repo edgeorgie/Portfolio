@@ -68,7 +68,7 @@ export const NormalWork = () => {
         {filterWork.map((work, index) => (
           <div key={index} className='app__work-item app__flex'>
             <div className='app__work-img app__flex'>
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={urlFor(work.imgUrl)} alt={work.title} />
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{

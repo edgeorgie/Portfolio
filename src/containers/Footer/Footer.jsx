@@ -102,6 +102,7 @@ const NormalFooter = () => {
                   name='name'
                   value={name}
                   onChange={handleChangeInput}
+                  required
                 />
               </div>
               <label htmlFor='email'>Email</label>
@@ -113,6 +114,7 @@ const NormalFooter = () => {
                   name='email'
                   value={email}
                   onChange={handleChangeInput}
+                  required
                 />
               </div>
               <label htmlFor='message'>Message</label>
@@ -123,6 +125,7 @@ const NormalFooter = () => {
                   name='message'
                   value={message}
                   onChange={handleChangeInput}
+                  required
                 />
               </div>
               <input

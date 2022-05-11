@@ -45,7 +45,7 @@ export const NormalHeader = () => {
           <motion.img
             className='app__header-img--profile'
             src={images.profile}
-            alt='Profile picture'
+            alt='Profile picture of Edwin Jorge'
             whileInView={{ scale: [0, 1] }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
           />
@@ -53,7 +53,7 @@ export const NormalHeader = () => {
             whileInView={{ scale: [0, 1] }}
             transition={{ duration: 0.7, ease: 'easeInOut' }}
             src={images.circle}
-            alt='Profile circle'
+            alt='Profile circle background'
             className='overlay-circle'
           />
         </motion.div>
