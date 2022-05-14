@@ -45,7 +45,6 @@ export const NormalWork = () => {
           'Frontend',
           'React.js',
           'Next.js',
-          'UI/UX',
           'Fullstack'
         ].map((item, index) => (
           <div
